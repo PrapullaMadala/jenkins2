@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('Chekout') {
+            steps {
+                echo 'Checout cod from git..'
+            }
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
